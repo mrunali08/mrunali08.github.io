@@ -1,0 +1,5 @@
+select od.orederid, p.productName, o.quantity as quantities, o.quantity*o.unitprice As prices 
+from
+order od, oerderitem o, product p 
+where 
+od.orderid=o.orderid AND o.productid=p.productid;
